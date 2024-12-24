@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        body {
+            background-size: 100%;
+            
+            border: 12px dotted rebeccapurple;
+            font-family: fantasy;
+            background-color: #fefefe50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .formulaire {
+            margin: 40px;
+            padding: 3%;
+            background-color: #fffcff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(104, 34, 169, 0.1);
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #020202;
+            text-transform: uppercase;
+            text-shadow: 3px 2px 1px rgb(187, 131, 218);
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #242f39;
+        }
+
+        input select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 4px rgba(18, 82, 151, 0.5);
+        }
+
+        input::placeholder {
+            color: #f3aff2;
+        }
+
+        input:disabled,
+        select:disabled {
+            background-color: #52aff2;
+            cursor: not-allowed;
+        }
+
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #5a74c6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="formulaire" action="">
+        <h1>Inscription</h1><br>
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email" required><br>
+
+        <label for="motdepasse">Mot de passe :</label><br>
+        <input type="password" id="motdepasse" name="motdepasse" placeholder="Votre mot de passe" required><br>
+
+        <label for="pays">Pays :</label>
+        <picture>
+            <source media="(min-width: )" srcset=""><br>
+            <img src="" alt=""><br>
+        </picture>
+        <select id="pays" name="pays"><br>
+            <option value="maroc">Maroc</option>
+            <option value="france">France</option>
+            <option value="algerie">Algérie</option>
+        </select>
+
+        <div class="checkbox-group"><br>
+            <input type="checkbox" id="cgu" name="cgu" required>
+            <label for="cgu">J'accepte les conditions générales d'utilisation</label>
+        </div>
+
+        <button type="submit">Envoyer</button>
+        <a id="mot" href="mot de passe oblier"></a>
+    </form>
+
+</body>
+
+</html>
